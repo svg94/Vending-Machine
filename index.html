@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Succ Interface</title>
-</head>
-<body>
-	<h1>Imagine having WebInterface for SnackBox</h1>
-	<p>
-	<button type="button" id="hello" onclick="msg()">Succ Snack1</button>
-	<button type="button">Succ Snack2</button>
-	</p>
-	<p>
-	<button type="button">Succ Snack3</button>
-	<button type="button">Succ Snack4</button>
-	<p/>
-	<p id="hello2"</p>
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script>
-	function msg(){
-	document.getElementById("hello2").innerHTML = "Sie wollen Snack succen? Oben links? OK.";
-	$.ajax({
-		url: "/etc/www/html/test.py",
-		context: document.body}).done(function(){
-		alert('finished');
-		});
-	}
-	</script>
-
-
-</body>
+	<head>
+		<title>Succ Interface</title>
+		<script src=/home/bojan/Vending-Machine/script.js>	</script>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<h1>Imagine having WebInterface for SnackBox</h1>
+		<p>
+			<button type="button" id="snack1" onclick="msg()">Succ Snack1</button>
+			<button type="button" id="snack2" >Succ Snack2</button>
+		</p>
+		<p>
+			<button type="button" id="snack3">Succ Snack3</button>
+			<button type="button" id="snack4">Succ Snack4</button>
+		<p/>
+		<p id="succ"</p>
+	</body>
 </html>
