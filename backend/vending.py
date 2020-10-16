@@ -22,18 +22,16 @@ def GPIO_SETUP(a,b,c,d):
     GPIO.output(D,d)
     time.sleep(0.002)
 
-@app.route('/', methods[GET])
+@app.route('/')
 def index():
-    status = request.args.get('status')
-    if status == 'succ':
-        GPIO_SETUP(0,0,0,0)
-        for i in range(2000):
-            GPIO_SETUP(1,1,0,0)
-            GPIO_SETUP(0,1,1,0)
-            GPIO_SETUP(0,0,1,1)
-            GPIO_SETUP(1,0,0,1)
-        GPIO_SETUP(0,0,0,0)
-        return jsonify({"message": "Here your snack."})
+    GPIO_SETUP(0,0,0,0)
+    for i in range(2000):
+        GPIO_SETUP(1,1,0,0)
+        GPIO_SETUP(0,1,1,0)
+        GPIO_SETUP(0,0,1,1)
+        GPIO_SETUP(1,0,0,1)
+    GPIO_SETUP(0,0,0,0)
+    return jsonify({"message": "Here your snack."})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
