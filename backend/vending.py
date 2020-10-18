@@ -15,6 +15,20 @@ def index():
 		m1.Turn_Right(500)
 		text="Snack retrieved. Don't get any more, bro. It's for your own health."
 		return render_template("index.html",name=text)
+	if status == 'succ2':
+		m2.Turn_Right(500)
+		text="Snack retrieved. Don't get any more, bro. It's for your own health."
+		return render_template("index.html",name=text)
+	if status == 'succ3':
+		m3.Turn_Right(500)
+		text="Snack retrieved. Don't get any more, bro. It's for your own health."
+		return render_template("index.html",name=text)
+	if status == 'succ4':
+		m4.Turn_Right(500)
+		text="Snack retrieved. Don't get any more, bro. It's for your own health."
+		return render_template("index.html",name=text)
+
+
 	return render_template("index.html",name =text)
 
 if __name__ == "__main__":
