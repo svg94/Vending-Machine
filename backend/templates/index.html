@@ -3,18 +3,24 @@
 	<head>
 		<title>Succ Interface</title>
 		<script src=/home/bojan/Vending-Machine/script.js>	</script>
-		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<h1>Imagine having WebInterface for SnackBox</h1>
 		<p>
-			<button type="button" id="snack1" onclick="msg()">Succ Snack1</button>
-			<button type="button" id="snack2" >Succ Snack2</button>
+			<button type="button" id="snack1" >Succ Snack1</button>
+			<button type="button" id="snack2" onclick="msg()">Succ Snack2</button>
 		</p>
 		<p>
 			<button type="button" id="snack3">Succ Snack3</button>
 			<button type="button" id="snack4">Succ Snack4</button>
 		<p/>
 		<p id="succ"</p>
+		<script>
+			function msg(){
+				window.open("/?status=succ2","_self");
+			}
+		</script>
+
 	</body>
 </html>
