@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import motor
+from motor import Motor
 
 app = Flask(__name__)
 m1 = Motor(7,11,13,15)
