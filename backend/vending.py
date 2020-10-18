@@ -1,6 +1,7 @@
 import time
 import RPi.GPIO as GPIO
 from flask import Flask, request, render_template
+import motor
 
 app = Flask(__name__)
 GPIO.setmode(GPIO.BOARD)
