@@ -14,7 +14,7 @@ def index():
 	if status == 'succ1':
 		m1.Turn_Right(500)
 		text="Snack retrieved. Don't get any more, bro. It's for your own health."
-		return render_template("index.html",name=text
+		return render_template("index.html",name=text)
 	return render_template("index.html",name =text)
 
 if __name__ == "__main__":
