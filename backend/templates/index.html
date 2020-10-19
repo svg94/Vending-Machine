@@ -2,25 +2,23 @@
 <html>
 	<head>
 		<title>Succ Interface</title>
-		<script src=/home/bojan/Vending-Machine/script.js>	</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<h1>Imagine having WebInterface for SnackBox</h1>
 		<p>
-			<button type="button" id="snack1" onclick="msg(1)">Succ Snack1</button>
-			<button type="button" id="snack2" onclick="msg(2)">Succ Snack2</button>
+			<button type="button" id="snack1" onclick="spin(1)">Succ Snack1</button>
+			<button type="button" id="snack2" onclick="spin(2)">Succ Snack2</button>
 		</p>
 		<p>
-			<button type="button" id="snack3" onclick="msg(3)">Succ Snack3</button>
-			<button type="button" id="snack4" onclick="msg(4)">Succ Snack4</button>
+			<button type="button" id="snack3" onclick="spin(3)">Succ Snack3</button>
+			<button type="button" id="snack4" onclick="spin(4)">Succ Snack4</button>
 		<p/>
 		<p id="succ"</p>
 		<script>
-			function msg(num){
-				window.open("/?status=succ"+num.toString(),"_self");
+			function spin(num){
+  			window.open("/?status=succ"+num.toString(),"_self");
 			}
 		</script>
-
 	</body>
 </html>
