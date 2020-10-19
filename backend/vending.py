@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from motor import Motor
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates")
 m1 = Motor(7,11,13,15)
 m2 = Motor(19,21,23,29)
 m3 = Motor(8,10,12,16)
