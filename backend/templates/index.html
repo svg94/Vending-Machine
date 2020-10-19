@@ -8,17 +8,17 @@
 	<body>
 		<h1>Imagine having WebInterface for SnackBox</h1>
 		<p>
-			<button type="button" id="snack1" >Succ Snack1</button>
-			<button type="button" id="snack2" onclick="msg()">Succ Snack2</button>
+			<button type="button" id="snack1" onclick="msg(1)">Succ Snack1</button>
+			<button type="button" id="snack2" onclick="msg(2)">Succ Snack2</button>
 		</p>
 		<p>
-			<button type="button" id="snack3">Succ Snack3</button>
-			<button type="button" id="snack4">Succ Snack4</button>
+			<button type="button" id="snack3" onclick="msg(3)">Succ Snack3</button>
+			<button type="button" id="snack4" onclick="msg(4)">Succ Snack4</button>
 		<p/>
 		<p id="succ"</p>
 		<script>
-			function msg(){
-				window.open("/?status=succ2","_self");
+			function msg(num){
+				window.open("/?status=succ"+num.toString(),"_self");
 			}
 		</script>
 
