@@ -1,13 +1,13 @@
 from flask import Flask, request, render_template
 from motor import Motor
 
-app = Flask(__name__, template_folder="./")
+app = Flask(__name__)
 m1 = Motor(7,11,13,15)
 m2 = Motor(19,21,23,29)
 m3 = Motor(8,10,12,16)
 m4 = Motor(18,22,24,26)
 
-@app.route('/Vending-Machine/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def index():
 	status = request.args.get('status')
 	text=""
@@ -31,5 +31,5 @@ def index():
 
 	return render_template("index.html",name =text)
 
-if __name__ == "__main__":
-	app.run()
+#if __name__ == "__main__":
+#	app.run()
