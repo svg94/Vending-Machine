@@ -27,9 +27,28 @@ def index():
 		m4.Turn_Right(500)
 		text="Snack retrieved. Don't get any more, bro. It's for your own health."
 		return render_template("index.html",name=text)
-
-
 	return render_template("index.html",name =text)
+@app.route('/settings.html', methods=['GET'])
+def settings():
+    status = request.args.get('status')
+    text=""
+    if status == 'bacc1':
+        m1.Turn_Left(500)
+        text="Gimme more"
+        return render_template('settings.html')
+    if status == 'bacc2':
+        m2.Turn_Left(500)
+        text="Gimme more"
+        return render_template('settings.html')
+    if status == 'bacc3':
+        m3.Turn_Left(500)
+        text="Gimme more"
+        return render_template('settings.html')
+    if status == 'bacc4':
+        m4.Turn_Left(500)
+        text="Gimme more"
+        return render_template('settings.html')
+    return render_template("settings.html")
 
 #if __name__ == "__main__":
 #	app.run()
