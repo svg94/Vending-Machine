@@ -32,11 +32,11 @@ class Motor:
 			self.GPIO_SETUP(1,0,0,1)
 		self.GPIO_SETUP(0,0,0,0)
 	def Turn_Left(self,x):
-		GPIO_SETUP(0,0,0,0)
+		self.GPIO_SETUP(0,0,0,0)
 		y=x*2
 		for i in range(y):			
-			GPIO_SETUP(1,0,0,1)
-			GPIO_SETUP(0,0,1,1)
-			GPIO_SETUP(0,1,1,0)
-			GPIO_SETUP(1,1,0,0)
-		GPIO_SETUP(0,0,0,0)
+			self.GPIO_SETUP(1,0,0,1)
+			self.GPIO_SETUP(0,0,1,1)
+			self.GPIO_SETUP(0,1,1,0)
+			self.GPIO_SETUP(1,1,0,0)
+		self.GPIO_SETUP(0,0,0,0)
