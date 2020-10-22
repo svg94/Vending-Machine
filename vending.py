@@ -27,9 +27,10 @@ def index():
 		m4.Turn_Right(500)
 		text="Snack retrieved. Don't get any more, bro. It's for your own health."
 		return render_template("index.html",name=text)
-
-
 	return render_template("index.html",name =text)
+@app.route('/settings.html')
+def settings():
+    return render_template("settings.html")
 
 #if __name__ == "__main__":
 #	app.run()
