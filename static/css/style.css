@@ -3,3 +3,60 @@ body{
   text-align: center;
 }
 .butts{}
+.sidebar{
+				background-color: #545454;
+				height: 100%; /* Full-height: remove this if you want "auto" height */
+  			width: 10%; /* Set the width of the sidebar */
+  			position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  			z-index: 1; /* Stay on top */
+  			top: 0; /* Stay at the top */
+  			left: 0;
+  			overflow-x: hidden; /* Disable horizontal scroll */
+  			padding-top: 20px;
+				border-right: 3px #444444 solid;
+}
+	.sidebar a{
+		position:relative;
+		top: 70%;
+		color: #111;
+		font-style: italic;
+	}
+	.sidebar a:hover {
+		color: #a1a1a1;
+	}
+	.sidebar h1{
+		position: relative;
+		top: 35%;
+		color: #111;
+		text-decoration: underline;
+	}
+.snackbox{
+  position: relative;
+  width: 100;
+  height: auto;
+}
+  .snackbox img{
+    width: 40%;
+    height: 40%;
+  }
+  .snackbox .butt-container {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width:  22%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+    .snackbox .butt-container .butts2{
+      position: relative;
+      top: 50%;
+    }

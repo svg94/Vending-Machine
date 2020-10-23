@@ -5,21 +5,27 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 	</head>
 	<body>
 		<h1>Imagine having WebInterface for SnackBox</h1>
-		<div class="butts">
-			<button type="button" id="snack1" onclick="spin(1)">Succ Snack1</button>
-			<button type="button" id="snack2" onclick="spin(2)">Succ Snack2</button>
+		<div class="sidebar">	<!-- Sidebar-->
+			<h1> succ snacc </h1>
+			<a href="settings.html">settings <br>(only 4 admin)</a>
 		</div>
-		<div id="butts">
-			<button type="button" id="snack3" onclick="spin(3)">Succ Snack3</button>
-			<button type="button" id="snack4" onclick="spin(4)">Succ Snack4</button>
-		<div/>
-		<p id="succ"></p>
-		<hr>
-			<footer>
-				<a href="settings.html">settings</a>
-			</footer>
+		<div class="snackbox">
+			<img src="{{ url_for('static', filename='img/vending.jpeg') }}">
+			<div class="butt-container">
+				<div class="butts">
+					<button type="button" class="snack1" onclick="spin(1)">Succ Snack1</button>
+					<button type="button" class="snack2" onclick="spin(2)">Succ Snack2</button>
+				</div>
+				<div class="butts2">
+					<button type="button" class="snack3" onclick="spin(3)">Succ Snack3</button>
+					<button type="button" class="snack4" onclick="spin(4)">Succ Snack4</button>
+				<div/>
+			</div>
+		</div>
+				<p id="succ"></p>
 	</body>
 </html>
