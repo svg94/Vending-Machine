@@ -2,7 +2,6 @@ body{
   background-color: #6b6b6b;
   text-align: center;
 }
-.butts{}
 .sidebar{
 				background-color: #545454;
 				height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -47,16 +46,54 @@ body{
     height: 40%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: transparent;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
-    border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
   }
+  .snackbox .butt-container .butts1{
+    position:absolute;
+    height: 35%;
+    width: 70%;
+  }
+  .snackbox .butt-container .butts1 .snack1{
+    position: absolute;
+    left: 14%;
+    height: 100%;
+    width: 34%;
+    background-color: transparent;
+    border: none !important;
+  }
+  .snackbox .butt-container .butts1 .snack2{
+    background-color: transparent;
+    border: none !important;
+    position: absolute;
+    height: 100%;
+    width: 34%;
+    left:70%;
+  }
     .snackbox .butt-container .butts2{
-      position: relative;
-      top: 50%;
+      position: absolute;
+      top: 64%;
+      height: 35%;
+      width: 70%;
+    }
+    .snackbox .butt-container .butts2 .snack3{
+      position: absolute;
+      background-color: transparent;
+      left: 15%;
+      width: 35%;
+      height:100%;
+      border:none;
+    }
+    .snackbox .butt-container .butts2 .snack4{
+      position: absolute;
+      background-color: transparent;
+      left:70%;
+      height:100%;
+      width: 35%;
+      border:none;
     }

@@ -5,6 +5,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="./../static/css/style.css">
 
 	</head>
 	<body>
@@ -14,15 +15,16 @@
 			<a href="settings.html">settings <br>(only 4 admin)</a>
 		</div>
 		<div class="snackbox">
-			<img src="{{ url_for('static', filename='img/vending.jpeg') }}">
+			<!--<img src="{{ url_for('static', filename='img/vending.jpeg') }}"> -->
+			<img src="./../static/img/vending.jpeg">
 			<div class="butt-container">
-				<div class="butts">
-					<button type="button" class="snack1" onclick="spin(1)">Succ Snack1</button>
-					<button type="button" class="snack2" onclick="spin(2)">Succ Snack2</button>
+				<div class="butts1">
+					<button type="button" class="snack1" onclick="spin(1)">Succ1</button>
+					<button type="button" class="snack2" onclick="spin(2)">Succ2</button>
 				</div>
 				<div class="butts2">
-					<button type="button" class="snack3" onclick="spin(3)">Succ Snack3</button>
-					<button type="button" class="snack4" onclick="spin(4)">Succ Snack4</button>
+					<button type="button" class="snack3" onclick="spin(3)">Succ3</button>
+					<button type="button" class="snack4" onclick="spin(4)">Succ4</button>
 				<div/>
 			</div>
 		</div>
