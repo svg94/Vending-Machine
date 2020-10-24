@@ -4,22 +4,29 @@
 		<title>Succ Settings</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+		<link rel="stylesheet" href="./../static/css/style.css">
 	</head>
 	<body>
 		<h1>Imagine having WebInterface-Settings for SnackBox</h1>
-		<div>
-			<button type="button" id="bacc1" onclick="refill(1)">putIn</button>
-			<button type="button" id="bacc2" onclick="refill(2)">putIn</button>
+		<div class="sidebar">	<!-- Sidebar-->
+			<h1> succ snacc </h1>
+			<a href="/">Homepage <br>(4 normys)</a>
 		</div>
-		<div>
-			<button type="button" id="bacc3" onclick="refill(3)">putIn</button>
-			<button type="button" id="bacc4" onclick="refill(4)">putIn</button>
-		<div/>
+		<div class="snackbox">
+			<!--<img src="{{ url_for('static', filename='img/vending.jpeg') }}"> -->
+			<img src="./../static/img/vending.jpeg">
+			<div class="butt-container">
+				<div class="butts1">
+					<button type="button" class="snack1" onclick="refill(1)"></button>
+					<button type="button" class="snack2" onclick="refill(2)"></button>
+				</div>
+				<div class="butts2">
+					<button type="button" class="snack3" onclick="refill(3)"></button>
+					<button type="button" class="snack4" onclick="refill(4)"></button>
+				<div/>
+			</div>
+		</div>
 		<p id="succ"></p>
-		<hr>
-			<footer>
-				<a href="/">go back to snacc</a>
-			</footer>
 	</body>
 </html>
