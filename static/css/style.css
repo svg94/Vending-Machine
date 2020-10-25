@@ -97,3 +97,17 @@ body{
       width: 35%;
       border:none;
     }
+  .snackbox .insults{
+    position: absolute;
+    border-bottom: 2px #111 solid;
+    border-top: 2px #111 solid;
+    border-left: 2px #111 solid;
+    border-right: 2px #111 solid;
+    width: 30%;
+    height: 100%;
+    top: 0%;
+    left: 70%;
+
+    color: #111;
+    font-weight: bold;
+  }
