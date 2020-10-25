@@ -3,10 +3,10 @@ from motor import Motor
 from insult import Insults
 
 app = Flask(__name__)
-m1 = Motor(7,11,13,15)
-m2 = Motor(19,21,23,29)
-m3 = Motor(8,10,12,16)
-m4 = Motor(18,22,24,26)
+m2 = Motor(7,11,13,15)
+m1 = Motor(19,21,23,29)
+m4 = Motor(8,10,12,16)
+m3 = Motor(18,22,24,26)
 i = Insults()
 
 @app.route('/', methods=['GET'])
